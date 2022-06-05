@@ -1,0 +1,66 @@
+.grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 4.5rem auto;
+}
+
+.header {
+    box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
+    -webkit-box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
+    -moz-box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
+}
+
+.content {
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.bar {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 22rem auto 30rem;
+}
+
+.bar .logo_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar .logo_panel {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bar .logo_panel img {
+    width: 20rem;
+}
+
+.bar .button_panel {
+    display: flex;
+    align-items: center;
+}
+
+.bar .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 7rem;
+    cursor: pointer;
+}
+
+.bar .button:hover {
+    color: var(--primary-color);
+    font-weight: 500;
+    transform: translateY(-2px)
+}
+
+.bar .login_panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1.5rem;
+    gap: .5rem;
+}
