@@ -13,7 +13,7 @@ function StudentPage() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 1500)
+        }, 1000)
     }, [])
 
     return (
@@ -22,8 +22,8 @@ function StudentPage() {
                 loading
                     ? <><LoadingIconView /></>
                     : <>
-                        <h1>Student</h1>
                         <div className={style.search_card}>
+                          
                         </div>
                         <div className={style.container}>
                             {
