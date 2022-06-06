@@ -7,3 +7,8 @@
   justify-items: center;
 }
 
+.search_card {
+  background-color: var(--primary-grey-color);
+  border-radius: 0.4rem;
+  height: 20rem;
+}

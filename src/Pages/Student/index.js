@@ -23,6 +23,8 @@ function StudentPage() {
                     ? <><LoadingIconView /></>
                     : <>
                         <h1>Student</h1>
+                        <div className={style.search_card}>
+                        </div>
                         <div className={style.container}>
                             {
                                 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, , 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(x => {
