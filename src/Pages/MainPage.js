@@ -4,6 +4,8 @@ import { MAIN_ROUTE_PATH } from '../Constants/path'
 import HomePage from './Home'
 import ContactUsPage from './Contact'
 import InformationPage from './Information'
+import StudentPage from './Student'
+import StudentDetail from './Student/Detail'
 
 function MainPage() {
   return (
@@ -13,6 +15,8 @@ function MainPage() {
           <Route path={MAIN_ROUTE_PATH.HOME} element={<Navigate to={MAIN_ROUTE_PATH.INFORMAION} />} />
           <Route path={MAIN_ROUTE_PATH.CONTACT} element={<ContactUsPage />} />
           <Route path={MAIN_ROUTE_PATH.INFORMAION} element={<InformationPage />} />
+          <Route path={MAIN_ROUTE_PATH.STUDENT} element={<StudentPage />} />
+          <Route path={MAIN_ROUTE_PATH.STUDENT_DETAIL} element={<StudentDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

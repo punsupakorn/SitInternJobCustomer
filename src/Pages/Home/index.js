@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate, Outlet } from 'react-router-dom'
 import style from './home.module.css'
-import sitLogo from '../../Assets/SIT-LOGO.png'
+import sitLogo from '../../Assets/sit-banner-logo.png'
 import { MAIN_ROUTE_PATH } from '../../Constants/path'
 import { useState } from 'react'
 import ErrorAlertModal from '../../Components/ErrorAlertModal'
@@ -45,16 +45,16 @@ function HomePage() {
           </div>
           <div className={style.option_button_panel}>
             <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.INFORMAION)}><p>Information</p></div>
-            {/* <div className={style.option_button}><p>For Student</p></div>
-            <div className={style.option_button}><p>For Company</p></div> */}
+            <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.STUDENT)}><p>Student</p></div>
+            <div className={style.option_button}><p>Company</p></div>
             <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.CONTACT)}><p>Contact Us</p></div>
           </div>
           <div className={style.login_panel}>
             <input placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
             <input placeholder='Password' type={'password'} onChange={(e) => setPassword(e.target.value)} />
             <button onClick={login}>LOG IN</button>
-            <button variant={'grey'}>REGISTER</button>
-            <p>forgot password?</p>
+            {/* <button variant={'grey'}>REGISTER</button> */}
+            <p>Forgot Password?</p>
           </div>
         </div>
       </div>

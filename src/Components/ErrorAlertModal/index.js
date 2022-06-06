@@ -14,7 +14,7 @@ function ErrorAlertModal({ description, onClose, open }) {
                 <div className={style.card}>
                     <h2>Error !</h2>
                     <p className={style.desc}>{description}</p>
-                    <button variant={'grey'} onClick={onClose}>Back</button>
+                    <button onClick={onClose}>Back</button>
                 </div>
             </div>
         </>

@@ -1,6 +1,7 @@
 import React from 'react'
-// import style from './contact.module.css'
+import style from './contact.module.css'
 import { useState, useEffect } from 'react'
+import sitImg from '../../Assets/sit-banner2-logo.png'
 
 function ContactUsPage() {
     const [loading, setLoading] = useState(true)
@@ -21,14 +22,20 @@ function ContactUsPage() {
                 loading
                     ? <>Loading....</>
                     : <>
-                        <h1>Contact us</h1>
+                        <h1>Contact Us</h1>
+                        <img className={style.logo} src={sitImg} alt="" />
                         <div>
-                            School of Information Technology,
-                            King Mongkut's University of Technology Thonburi,
-                            126 Pracha-U-Thit Rd., Bangmod, Thungkru, Bangkok 10140 , Thailand
-                            Tel. 0-2470-9849 , 0-2470-9850
+                            School of Information Technology ,
+                            King Mongkut's University of Technology Thonburi
+                        </div>
+                        <div>
+                            Address : 126 Pracha-U-Thit Rd., Bangmod, Thungkru, Bangkok 10140 , Thailand
+                        </div>
+                        <div>
+                            Contact : Tel. 0-2470-9849 , 0-2470-9850
                             Fax 0-2872-7145
                         </div>
+
                     </>
             }
         </>
