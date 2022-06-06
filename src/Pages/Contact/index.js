@@ -2,6 +2,7 @@ import React from 'react'
 import style from './contact.module.css'
 import { useState, useEffect } from 'react'
 import sitImg from '../../Assets/sit-banner2-logo.png'
+import LoadingIconView from '../../Components/LoaingIconView'
 
 function ContactUsPage() {
     const [loading, setLoading] = useState(true)
@@ -13,14 +14,14 @@ function ContactUsPage() {
     function loadingTimeout() {
         setTimeout(() => {
             setLoading(false)
-        }, 800)
+        }, 1000)
     }
 
     return (
         <>
             {
                 loading
-                    ? <>Loading....</>
+                    ? <><LoadingIconView /></>
                     : <>
                         <h1>Contact Us</h1>
                         <img className={style.logo} src={sitImg} alt="" />

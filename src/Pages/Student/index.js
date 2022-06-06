@@ -3,6 +3,7 @@ import style from './student.module.css'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MAIN_ROUTE_PATH } from '../../Constants/path'
+import LoadingIconView from '../../Components/LoaingIconView'
 
 function StudentPage() {
     const navigate = useNavigate()
@@ -11,7 +12,7 @@ function StudentPage() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 800)
+        }, 1500)
     }, [])
 
     const fakeImg = 'https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png'
@@ -19,7 +20,7 @@ function StudentPage() {
         <>
             {
                 loading
-                    ? <>Loading....</>
+                    ? <><LoadingIconView /></>
                     : <>
                         <h1>Student</h1>
                         <div className={style.container}>

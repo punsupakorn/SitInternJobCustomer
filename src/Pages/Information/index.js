@@ -1,6 +1,7 @@
 import React from 'react'
 // import style from './information.module.css'
 import { useState, useEffect } from 'react'
+import LoadingIconView from '../../Components/LoaingIconView'
 
 function InformationPage() {
     const [loading, setLoading] = useState(true)
@@ -8,7 +9,7 @@ function InformationPage() {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 800)
+        }, 1000)
     }, [])
 
     return (
@@ -16,7 +17,7 @@ function InformationPage() {
             {
                 loading
                     ?
-                    <>Loading....</>
+                    <><LoadingIconView /></>
                     :
                     <div>InformationPage</div>
             }

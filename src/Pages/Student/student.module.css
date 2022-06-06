@@ -3,7 +3,7 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  row-gap: 2rem;
   justify-items: center;
 }
 
@@ -15,10 +15,11 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  transition: transform 0.2s; /* Animation */
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: scale(1.05);
   box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
   -webkit-box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
   -moz-box-shadow: 1px 1px 14px 0px rgba(176, 176, 176, 0.73);
@@ -35,12 +36,14 @@
 }
 
 .card .profile {
+  background-color: white;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  border-radius: 0.4rem;
 }
 
 .card .profile p {
-  /* padding: 0; */
   margin: 0.2rem;
 }
