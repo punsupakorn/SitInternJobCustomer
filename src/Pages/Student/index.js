@@ -3,8 +3,11 @@ import style from './student.module.css'
 import { useState, useEffect } from 'react'
 import LoadingIconView from '../../Components/LoaingIconView'
 import StudentCard from '../../Components/StudentCard'
+import { MAIN_ROUTE_PATH } from '../../Constants/path'
+import { useNavigate } from 'react-router-dom'
 
 function StudentPage() {
+    const navigate = useNavigate()
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -24,7 +27,9 @@ function StudentPage() {
                             {
                                 [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, , 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map(x => {
                                     return (
-                                        <StudentCard />
+                                        <StudentCard
+                                            action={() => navigate(MAIN_ROUTE_PATH.STUDENT_DETAIL.replace(':id', 111))}
+                                        />
                                     )
                                 })
                             }
