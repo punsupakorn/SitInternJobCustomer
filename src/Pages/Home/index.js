@@ -53,7 +53,7 @@ function HomePage() {
             <input placeholder='Email' onChange={(e) => setEmail(e.target.value)} />
             <input placeholder='Password' type={'password'} onChange={(e) => setPassword(e.target.value)} />
             <button onClick={login}>LOG IN</button>
-            <button varaint={'grey'}>REGISTER</button>
+            <button variant={'grey'}>REGISTER</button>
             <p>forgot password?</p>
           </div>
         </div>
