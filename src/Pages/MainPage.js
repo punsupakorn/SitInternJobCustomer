@@ -6,6 +6,7 @@ import ContactUsPage from './Contact'
 import InformationPage from './Information'
 import StudentPage from './Student'
 import StudentDetail from './Student/Detail'
+import CompanyPage from './Company'
 
 function MainPage() {
   return (
@@ -17,6 +18,7 @@ function MainPage() {
           <Route path={MAIN_ROUTE_PATH.INFORMAION} element={<InformationPage />} />
           <Route path={MAIN_ROUTE_PATH.STUDENT} element={<StudentPage />} />
           <Route path={MAIN_ROUTE_PATH.STUDENT_DETAIL} element={<StudentDetail />} />
+          <Route path={MAIN_ROUTE_PATH.COMPANY} element={<CompanyPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

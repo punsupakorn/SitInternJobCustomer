@@ -24,7 +24,6 @@ function ContactUsPage() {
                     ? <><LoadingIconView /></>
                     : <>
                         <h1>Contact Us</h1>
-                        <img className={style.logo} src={sitImg} alt="" />
                         <div>
                             School of Information Technology ,
                             King Mongkut's University of Technology Thonburi

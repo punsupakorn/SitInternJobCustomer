@@ -19,7 +19,9 @@ function InformationPage() {
                     ?
                     <><LoadingIconView /></>
                     :
-                    <div>InformationPage</div>
+                    <>
+                        <h1>Information</h1>
+                    </>
             }
         </>
     )

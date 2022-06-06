@@ -46,7 +46,7 @@ function HomePage() {
           <div className={style.option_button_panel}>
             <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.INFORMAION)}><p>Information</p></div>
             <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.STUDENT)}><p>Student</p></div>
-            <div className={style.option_button}><p>Company</p></div>
+            <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.COMPANY)}><p>Company</p></div>
             <div className={style.option_button} onClick={() => navigate(MAIN_ROUTE_PATH.CONTACT)}><p>Contact Us</p></div>
           </div>
           <div className={style.login_panel}>
