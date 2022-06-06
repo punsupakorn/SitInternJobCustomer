@@ -1,0 +1,29 @@
+button {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid var(--primary-blue-color);
+  background-color: var(--primary-blue-color);
+  border-radius: 0.3rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  border-color: var(--primary-dark-blue-color);
+  background-color: var(--primary-dark-blue-color);
+  transform: translateY(-2px);
+}
+
+button[varaint="grey"] {
+  border: 1px solid silver;
+  color: black;
+  background-color: silver;
+}
+
+button[varaint="grey"]:hover {
+  border: 1px solid rgb(181, 181, 181);
+    background-color: rgb(181, 181, 181);
+  }

@@ -1,9 +1,26 @@
 import React from 'react'
-import style from './information.module.css'
+// import style from './information.module.css'
+import { useState, useEffect } from 'react'
 
 function InformationPage() {
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 800)
+    }, [])
+
     return (
-        <div>InformationPage</div>
+        <>
+            {
+                loading
+                    ?
+                    <>Loading....</>
+                    :
+                    <div>InformationPage</div>
+            }
+        </>
     )
 }
 

@@ -1,5 +1,5 @@
 export const MAIN_ROUTE_PATH = {
-    HOME: '',
+    HOME: '/',
     CONTACT: '/contact',
     INFORMAION: '/information'
 

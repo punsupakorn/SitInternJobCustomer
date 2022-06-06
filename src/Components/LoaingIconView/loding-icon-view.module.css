@@ -1,0 +1,8 @@
+.loading_view {
+  display: flex;
+  justify-content: center;
+}
+
+.loading_view img {
+  width: 8rem;
+}
